@@ -1,7 +1,7 @@
 // Truth or Dare Application
 
 const storageObj = {
-	apiURL: 'http://localhost:3000',
+	apiURL: 'https://streaminteract.onrender.com',
 	dareBTN: document.getElementById('dareBTN'),
 	truthBTN: document.getElementById('truthBTN'),
 	wyrBTN: document.getElementById('wyrBTN'),
