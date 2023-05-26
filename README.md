@@ -1,90 +1,61 @@
 # Stream Interact Twitch Extension
 
-## Overview
-The Stream Interact Extension is a fun and interactive tool designed to enhance engagement between content creators and their audience during live streams on Twitch. This extension enables streamers to select and pose truth, dare, never have I ever, would you rather, and paranoia questions to their chat, creating memorable and humorous moments on stream.
+Welcome to the Stream Interact Twitch Extension! This extension allows content creators to engage with their chat and create funny moments on stream by picking various question types such as Truth, Dare, Would You Rather, Never Have I Ever, and Paranoia.
 
-## Features
-- **Multiple Game Modes:** Choose from a variety of questions, including Truth, Dare, Never Have I Ever, Would You Rather, and Paranoia, to keep the stream entertaining and engaging.
-- **Seamless Integration:** The extension is built using Node.js, Express.js, PostgreSQL, and vanilla HTML, CSS, and JavaScript, ensuring a smooth and reliable user experience. The front-end utilizes DOM manipulation techniques for dynamic updates and real-time interaction.
+## Technologies Used
 
-## Prerequisites
-Before running the Truth or Dare Twitch Extension, ensure that you have the following dependencies installed:
+This project is built using the following technologies:
 
-- Node.js (version X.X.X)
-- Express.js (version X.X.X)
-- PostgreSQL (version X.X.X)
-- PG (PostgreSQL package for Node.js)
+- Node.js
+- Express.js
+- PostgreSQL
+- HTML
+- CSS
+- JavaScript (Vanilla DOM Manipulation)
 
-## Installation
-Follow these steps to set up the Truth or Dare Twitch Extension:
+## Getting Started
 
-1. Clone the repository: [Repo Link](https://github.com/Keyonnag/FrontEndProject-CSS-HTML-Javascript-.git)
+To use this Twitch Extension on your stream, follow the instructions below:
 
-
-2. Navigate to the project directory
-
-
-3. Install the required dependencies using npm:
-
-```
-npm i
-```
-
-4. Set up the PostgreSQL database:
-- Create a new database using the PostgreSQL client or a GUI tool of your choice.
-- Update the database credentials in the `config.js` file with your PostgreSQL connection details.
-
-5. Run the database migrations to set up the required tables:
-
-
-6. Start the application:
-
-
-7. The Truth or Dare Twitch Extension is now running on your local server. You can access it in your web browser at `http://localhost:3000`.
-
-## Configuration
-To customize the questions for each game mode, follow these steps:
-
-1. Open the `questions.json` file located in the project's root directory.
-2. Modify the JSON structure to add, remove, or edit the questions in each category.
-3. Save the changes.
-
-The next time you run the extension, the updated questions will be loaded and available for use during your stream.
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies by running `npm install`.
+3. Set up the PostgreSQL database using the provided schema and seed data. You can find the schema and seed data in the `database.sql` file.
+4. Configure the database connection settings in the server-side code (`server.js`) to match your PostgreSQL setup.
+5. Start the server by running `npm start`.
+6. Configure the Twitch Extension on your Twitch Developer Dashboard. Set the extension URL to the server URL where your extension is hosted.
+7. Install and activate the extension on your Twitch channel.
+8. Launch your stream and enjoy engaging with your chat using the various question types!
 
 ## Usage
-To enable the Truth or Dare Twitch Extension during your live stream, follow these steps:
 
-1. Visit the Twitch Developer Dashboard (https://dev.twitch.tv/dashboard/extensions) and create a new extension.
-2. Fill in the required details, such as the extension's name, version, and description.
-3. Set the extension's configuration to point to your local server (`http://localhost:3000`) during development.
-4. Generate the necessary extension keys and copy the Client ID.
-5. In the project's root directory, create a new file named `.env`.
-6. In the `.env` file, add the following line and replace `YOUR_CLIENT_ID` with the copied Client ID:
+Once the extension is installed and activated on your Twitch channel, you can interact with your chat using the following question types:
 
+- Truth: Ask your chat a truth question and see their responses.
+- Dare: Challenge your chat with a dare and have fun with their reactions.
+- Would You Rather: Present your chat with two options and see which one they prefer.
+- Never Have I Ever: Start a Never Have I Ever game with your chat and learn interesting facts about them.
+- Paranoia: Ask your chat a paranoia question and see who relates to it the most.
 
-7. Save the `.env` file.
+To use a question type, simply click on the corresponding button in the extension interface. The extension will fetch a random question from the database and display it on the screen. Have fun interacting with your chat and creating memorable moments on your stream!
 
-Now, when you start the Truth or Dare Twitch Extension and launch your Twitch stream, the extension will be available in your channel's overlay. You and your viewers can interact with it to play truth, dare, never have I ever, would you rather, and paranoia games, creating entertaining and engaging moments during your live streams.
+## Customization
+
+You can customize the look and feel of the extension by modifying the HTML and CSS files. The HTML file (`index.html`) contains the structure of the extension interface, while the CSS file (`style.css`) contains the styling rules.
+
+Feel free to modify the colors, fonts, and layout to match your stream's branding or personal preferences.
 
 ## Contributing
-We welcome contributions to the Truth or Dare Twitch Extension project. If you encounter any bugs, issues, or have suggestions for improvements, please open an issue on the project's GitHub repository (https://github.com/your-username/truth-or-dare-twitch-extension/issues).
 
-To contribute code changes:
+If you would like to contribute to this project, you are welcome to submit pull requests. Please include a detailed description of the changes you are proposing.
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make the necessary changes and commit them to your branch.
-4. Push your branch to your forked repository.
-5. Open a pull request on the main project repository, describing your changes and referencing any related issues.
+## Issues
 
-We appreciate your contributions and support in making the Truth or Dare Twitch Extension even better!
+If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/yourusername/yourrepository/issues) on the project's GitHub repository.
 
-## License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Please review the `LICENSE` file for more details.
+## Acknowledgements
 
-## Acknowledgments
-The Truth or Dare Twitch Extension was developed by [Keyonna Garfine](https://github.com/keyonnag) as part of a personal project. We would like to thank the open-source community for providing invaluable resources, tutorials, and libraries that made this project possible.
+This project was inspired by the need to engage with chat and create fun moments during Twitch streams. Special thanks to the Twitch community for their support and feedback.
 
-If you have any further questions or need assistance, please contact [keyonnaqt15@gmail.com](keyonnaqt15@gmail.com). Happy streaming and have fun with the Truth or Dare Twitch Extension!
+---
 
-
+Thank you for using the Stream Interact Twitch Extension. Enjoy engaging with your chat and have a great time on your streams!
